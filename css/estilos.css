@@ -1,0 +1,364 @@
+
+/* GENERALES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* body {font-family:Arial, Helvetica, sans-serif}
+* body {font-size: 1em;}
+
+* h1,h2,h3,h4 {font-family: 'Poppins', sans-serif;}
+
+.header h1 {color: green;}
+
+/* body */
+
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.container {
+    width: 90% ;
+    margin: 0 auto;
+}
+
+.container-pie {
+    width: 90% ;
+    margin: 0 auto;
+}
+
+
+
+/* TOP envios */
+
+.envios {
+    text-align: center;
+    width: 100%;
+    color:rgb(65, 114, 102);
+    padding: 0;
+    border: 1px solid cadetblue;
+}
+.envios p {
+    font-size:medium;
+    margin: 0.5em;
+}
+
+.envios img {
+    height: 16px;
+    width: 16px;
+}
+
+/* logo */ 
+.logo {
+    margin: 10px auto;
+}
+
+/* menu nav */
+.header {
+
+
+}
+.box-slide-menu {
+}
+
+.menu {
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+nav li {
+    background-color:white;
+    list-style-type: none;
+}
+
+nav a{
+    color: grey;
+    padding: 1em 1em 1em;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: aliceblue;
+    background-color: cadetblue;
+}
+
+/* slide show */
+.slideshow {
+    width: 100%;
+    background-image: url(../imagenes/img-slide-02.jpg);
+    background-position: center;
+    height: 250px;
+    display: block;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* aside   - grid derecha*/
+
+.panel-derecho p {
+    font-size: 0.7em;
+}
+.panel-derecho {
+}
+
+/*  main */
+
+
+/* PRODUCTOS */
+
+.producto-contenido {
+    width: 25%;
+    min-height: 200px;
+    margin: 1em 1em 0em 0em;
+    float: left;
+    border:1px solid rgb(213, 222, 222) ;
+    display: block;
+    padding: 5px;
+    color: cadetblue;   
+    position: relative;
+    min-height: 420px;
+    
+}
+
+.producto-contenido p {
+    font-size: 0.7em;
+}
+
+
+
+.producto-contenido h3{
+    font-size: 1.2em;
+    
+}
+
+.img-box {
+    width: 100vh;
+    max-width:100%;
+    overflow: hidden;
+    position:relative;
+    border-radius: 20px;
+}
+.prod-icon {
+    float: right;
+}
+.prod-ico-cant {
+    bottom: 0;
+    position: absolute;
+}
+
+.prod-cant {
+    width: 50%;
+    float: left;
+}
+
+
+.prod-icon {
+    width: 50%;
+    float: right;
+}
+.prod-icon img {
+    width: 100%;
+    max-width: 100px ;
+    float: right;
+}
+
+.prod-cost {
+    color: #fff;
+    right: 0;
+    padding: 0 0.5em;
+    position:absolute;
+    z-index: 1;
+    margin-right: 0;
+    background-color: cadetblue;
+    font-weight: bold;
+
+}
+.agregar-carrito {
+    
+}
+
+.prod-descripcion p{
+    font-size: 1em;
+    color: cadetblue;
+}
+
+
+
+
+
+
+
+/* pie - footer */
+
+footer .maps,
+footer .rrss,
+footer .form {
+    
+}
+footer p,a,h1,h2,h3,h4 {
+    color: rgb(188, 220, 221);
+}
+
+footer .maps {
+}
+
+footer .addres {
+    margin: 5px;
+
+}
+
+footer svg {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* ICO - Animaciones RRSS */ 
+.icon {
+    border: 1px solid white;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+
+
+
+
+/* ---------------------- FORMULARIO ------------------------*/
+/* SE ANULO PARA DEJAR EL CSS ORGIGINAL */
+/*
+.form *,
+input,
+::placeholder {
+    color: white;
+}
+input::placeholder {
+    opacity: 0.5;
+}
+
+.Form{
+    background: transparent;
+    border-left: 1px solid rgba(255, 255, 255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    background-color: transparent;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+}
+
+
+.input-box input{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+
+}
+
+textarea {
+    padding: 1em;
+    margin-bottom: 1em;
+    outline: none;
+    background-color: transparent;
+    border-left: 2px solid rgba(255, 255, 255);
+    border-top: 2px solid rgba(255, 255, 255);
+}
+.textarea-txt {
+    font-size: 1.2em;
+}
+.Message{
+    color: rgb(230, 224, 235);
+}
+
+.Enviar-Contacto{
+    
+    width: 25%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(65, 114, 102);
+    font-weight: 500; 
+
+}
+*/

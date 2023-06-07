@@ -1,0 +1,183 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos                                                */
+/* Definimos el contenedor grid                                   */
+/* Esta es la configuración para dispositivos de mayor tamaño     */
+/*----------------------------------------------------------------*/
+.container {
+    display: grid;
+    /* Uso un atajo para definir tres filas / tres columnas */
+    grid-template: auto auto auto auto auto auto/ auto auto auto;
+
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas:"envios envios envios" 
+                        "logo logo logo"
+                        "header header header"
+                        "slideshow slideshow slideshow"
+                        "izq contenido der"
+                        "pie-iz pie-cen pie-de";
+
+    /* separamos los items con gap */
+    gap: 0 px;
+
+}
+
+.container,
+.container-pie {
+    width: 90% ;
+    margin: 0 auto;
+}
+
+
+
+.container-pie {
+    display: grid;
+
+    /* Una fila / cuatro columnas */
+    grid-template: auto/ auto auto auto auto;
+
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas:           
+                        "pie-iz-iz pie-iz-cen pie-cen-de pie-de-de";
+
+    /* separamos los items con gap */
+    gap: 0px;
+    padding:0;
+    margin: 0;
+}
+
+.container-pie {
+    width: 90% ;
+    margin: 0 auto;
+}
+.bg-container-pie{
+    background-color: rgb(65, 109, 111);
+}
+
+
+/*----------------------------------------------------------------*/
+/* Defino el nombre y color de cada area del grid                 */
+/*----------------------------------------------------------------*/
+/* CONTAINER */
+.envios    { grid-area: envios;    background-color: rgb(255, 255, 255);  }
+.logo      { grid-area: logo;      background-color: rgb(255, 255, 255);  }
+.header    { grid-area: header;    background-color: rgb(255, 255, 255);  }
+.slideshow { grid-area: slideshow; background-color: rgb(255, 255, 255);  }
+.izq       { grid-area: izq;       background-color: rgb(146, 200, 202);  }
+.der       { grid-area: der;       background-color: rgb(255, 255, 255);  }
+.contenido { grid-area: contenido; background-color: rgb(255, 255, 255);  } 
+/* CONTAINER FOOTER */
+.pie-iz-iz { grid-area: pie-iz-iz;    }
+.pie-iz-cen{ grid-area: pie-iz-cen;   }
+.pie-cen-de{ grid-area: pie-cen-de;   }
+.pie-de-de { grid-area: pie-de-de;    }
+
+/*----------------------------------------------------------------*/
+/* Definimos la apariencia de cada item del grid                  */
+/*----------------------------------------------------------------*/
+.item {
+    padding: 5px;
+}
+
+/*----------------------------------------------------------------*/
+/* Imagen con bordes redondeados, con limites de tamaño           */
+/*----------------------------------------------------------------*/
+img {
+    border-radius: 20px;
+    width: 100%;
+    max-width:400px;
+  }
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo tablet (menos de 920px)     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 920px) {
+    .container {
+        /* Uso un atajo para definir 3 filas / 2 columna */
+        grid-template: auto auto auto auto auto auto auto / 35% auto;
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas:
+            "envios envios" 
+            "logo logo"
+            "header header"
+            "slideshow slideshow "
+            "izq contenido"
+            "der der"
+            "pie-iz pie-de"
+            "pie-cen pie-cen ";
+    }
+    .container-pie {
+        /* Uso un atajo para definir 3 filas / 2 columna */
+        grid-template: auto auto auto / 35% auto;
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas:
+            "pie-iz-iz pie-iz-cen"
+            "pie-cen-de pie-cen-de"
+            "pie-de-de pie-de-de";
+
+    }
+
+    .producto-contenido {
+        width: 40%;
+        margin: 1em 1em 0em 0em;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+.container-pie {
+    /* Uso un atajo para definir 3 filas / 2 columna */
+    grid-template: auto auto auto / 30% auto;
+
+    /* Distribuimos el contenido en cada fila */
+    grid-template-areas:
+        "pie-iz-iz pie-iz-cen"
+        "pie-cen-de  pie-de-de"
+
+}
+}
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular (menos de 600px)    */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    .container {
+        /* Uso un atajo para definir 5 filas / 1 columna */
+        grid-template: auto auto auto auto auto auto/ 100%;
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "envios" "logo" "header" "slideshow" "izq"  "der""contenido" "pie";
+    }
+    .container-pie {
+        /* Uso un atajo para definir 4 filas / 1 columna */
+        grid-template: auto auto auto auto / 100%;
+
+        /* Distribuimos el contenido en cada fila */
+        grid-template-areas: "pie-iz-iz" "pie-iz-cen" "pie-cen-de" "pie-de-de";
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    /*  main */
+    .producto-contenido {
+        width: 100%;
+        margin: 1em 1em 0em 0em;
+    }
+    .pie {
+    }
+
+    .icon {
+        float:left;
+    }
+    
+        
+
+
+
+
+
+}

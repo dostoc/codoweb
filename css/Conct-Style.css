@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(flores.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+/* Boton de Volver a la Pagina Principal*/
+.Navegacion .BotonEnviar{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #156db1;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #156db1;
+    font-weight: 500px;
+    margin-left: 1000px;
+    text-decoration: none;
+    transition: .5s;}
+
+
+
+    .Navegacion .BotonEnviar:hover{
+        background: white;
+        color: green;
+    
+    }
+    .Navegacion a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    
+    }
+
+/* FORMULARIO COMPLETO*/
+
+.Form{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(7, 7, 7, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(167, 189, 165, 0.719); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form .Form-Contacto{
+    width: 100%;
+    padding: 40px;
+
+}
+
+
+
+/* PARTE DEL TITULO "Contacto"*/
+.Form-Contacto h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+/*CAJAS DE TEXTO*/
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #156db1;
+    margin: 30px 0;
+    
+
+}
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-60%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    
+}
+
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+
+textarea{
+    padding: 15px 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    
+    color: rgb(19, 17, 17);
+    border: 2px solid #156db1;
+    resize: none;
+ 
+    
+}
+.Message{
+    color: black;
+    padding: 3px
+}
+
+
+.Enviar-Contacto{
+    
+    width: 100%;
+    height: 50px;
+    background: #156db1;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500; 
+
+}
